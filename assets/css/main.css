@@ -235,6 +235,14 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.pt0 {
+		padding-top: 0 !important;
+	}
+
+	.pb0 {
+		padding-bottom: 0 !important;
+	}
+
 /* Loader */
 
 	@-moz-keyframes spinner-show {
@@ -3589,13 +3597,15 @@ input, select, textarea {
 
 .fa-phone:before,
 .fa-whatsapp:before,
-.fa-viber:before {
+.fa-viber:before,
+.fa-envelope:before {
 	margin-right: 5px;
 }
 
 #footer .fa-phone:before,
 #footer .fa-whatsapp:before,
-#footer .fa-viber:before {
+#footer .fa-viber:before,
+#footer .fa-envelope:before {
 	margin-right: 0;
 }
 

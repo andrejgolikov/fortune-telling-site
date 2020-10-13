@@ -3520,7 +3520,6 @@ input, select, textarea {
 				}
 
 			#banner .content .image {
-				border-radius: 100%;
 				display: inline-block;
 				height: 22em;
 				margin-left: 3em;
@@ -3529,7 +3528,6 @@ input, select, textarea {
 			}
 
 				#banner .content .image img {
-					border-radius: 100%;
 					display: block;
 					width: 100%;
 				}

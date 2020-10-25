@@ -2257,6 +2257,11 @@ header p {
     margin: 0 0 1.5em 0;
 }
 
+p.social-link {
+    color: white;
+    -webkit-text-fill-color: initial;
+}
+
 header h2 + p,
 p.social-link {
     font-size: 1.25em;
@@ -4211,4 +4216,33 @@ body.is-touch #banner {
         margin: 0;
         padding: 0;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header p
+{
+    color: #d5ad6d;
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style2 h1,
+.style2 h2,
+.style2 h3,
+.style2 h4,
+.style2 h5,
+.style2 h6,
+.style2 header p
+{
+    color: white;
+    background: none;
+    -webkit-text-fill-color: initial;
 }

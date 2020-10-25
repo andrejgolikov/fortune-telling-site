@@ -4236,13 +4236,13 @@ header p
     -webkit-text-fill-color: transparent;
 }
 
-.style2 h1,
-.style2 h2,
-.style2 h3,
-.style2 h4,
-.style2 h5,
-.style2 h6,
-.style2 header p
+#five h1,
+#five h2,
+#five h3,
+#five h4,
+#five h5,
+#five h6,
+#five header p
 {
     color: white;
     background: none;

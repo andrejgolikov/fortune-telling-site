@@ -3702,14 +3702,16 @@ body.is-touch #banner {
 .fa-phone:before,
 .fa-whatsapp:before,
 .fa-viber:before,
-.fa-envelope:before {
+.fa-envelope:before,
+.fa-instagram:before {
     margin-right: 5px;
 }
 
 #footer .fa-phone:before,
 #footer .fa-whatsapp:before,
 #footer .fa-viber:before,
-#footer .fa-envelope:before {
+#footer .fa-envelope:before,
+#footer .fa-instagram:before {
     margin-right: 0;
 }
 

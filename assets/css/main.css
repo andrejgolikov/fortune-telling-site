@@ -3618,6 +3618,18 @@ body.landing #header {
 #banner .content header h2 {
     font-size: 2.5em;
     margin: 0;
+    color: gold;
+    background: none;
+    -webkit-text-fill-color: initial;
+    font-weight: bold;
+}
+
+.online-consult {
+    font-size: 1.5em;
+    color: gold;
+    background: none;
+    -webkit-text-fill-color: initial;
+    font-weight: bold;
 }
 
 #banner .content header p {

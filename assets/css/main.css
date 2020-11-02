@@ -4260,3 +4260,7 @@ header p
     background: none;
     -webkit-text-fill-color: initial;
 }
+
+#four hr {
+    border-bottom-color: #d5ad6d;
+}

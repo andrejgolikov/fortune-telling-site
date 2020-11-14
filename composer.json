@@ -1,0 +1,13 @@
+{
+    "name": "andrejgolikov/fortune-telling-site",
+    "description": "Mira Kulpieva's Fortune telling site",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Andrey Golikov",
+            "email": "golickovandrey@gmail.com"
+        }
+    ],
+    "require": {}
+}

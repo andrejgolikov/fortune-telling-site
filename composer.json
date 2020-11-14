@@ -9,5 +9,7 @@
             "email": "golickovandrey@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "deployer/deployer": "^6.8"
+    }
 }

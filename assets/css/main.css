@@ -4264,3 +4264,8 @@ header p
 #four hr {
     border-bottom-color: #d5ad6d;
 }
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}

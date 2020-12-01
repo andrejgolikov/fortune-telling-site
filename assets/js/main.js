@@ -257,4 +257,60 @@
 			items: 1
 		});
 
+	// "Need help" email form
+	var $needHelpEmailForm = $('.form-need-help-email');
+	if ($needHelpEmailForm.length > 0) {
+		$needHelpEmailForm.validate({
+			rules: {
+				phone: {
+					require_from_group: [1, '.group-phone-or-email']
+				},
+				email: {
+					require_from_group: [1, '.group-phone-or-email']
+				}
+			},
+			messages: {
+				phone: {
+					require_from_group: 'Пожалуйста, заполните хотя бы одно поле',
+				},
+				email: {
+					require_from_group: 'Пожалуйста, заполните хотя бы одно поле',
+				},
+				message: {
+					required: 'Пожалуйста, опишите Вашу просьбу',
+				}
+			},
+			submitHandler: function(form) {
+				console.log('Show loader');
+				$(form).ajaxSubmit({
+					dataType: 'json',
+					success: function (data) {
+						console.log('success: %O', arguments);
+					},
+					error: function () {
+						console.log('error: %O', arguments);
+					}
+				});
+
+				// var $form = form;
+				// console.log('Show loader');
+				//
+				// $.ajax({
+				// 	method: form.method,
+				// 	url: form.action,
+				// 	data: $form.serialize(),
+				// 	dataType: 'json'
+				// }).done(function(data, textStatus, jqXHR) {
+				// 	console.log('data: %O', data);
+				// }).fail(function(jqXHR, textStatus, errorThrown) {
+				// 	console.log('Fail');
+				// }).always(function() {
+				// 	console.log('Hide loader');
+				// });
+				//
+				// return false;
+			}
+		});
+	}
+
 })(jQuery);

@@ -11,5 +11,8 @@
     ],
     "require-dev": {
         "deployer/deployer": "^6.8"
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.2"
     }
 }

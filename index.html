@@ -271,14 +271,20 @@
 						<h2>Обратитесь за помощью прямо сейчас!</h2>
 						<p>Не теряйте времени</p>
 					</header>
-					<form method="post" action="#" class="cta">
+					<form method="post" action="/api/email/" class="cta form-need-help-email">
 						<div class="row gtr-uniform gtr-50">
-							<div class="col-6 col-12-xsmall"><input type="text" name="phone" id="phone" placeholder="Номер телефона" /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Укажите Вашу просьбу" rows="6"></textarea>
+							<div class="col-6 col-12-xsmall">
+								<input class="group-phone-or-email" type="text" name="phone" id="phone" placeholder="Номер телефона" />
 							</div>
-							<div class="col-4 col-12-xsmall"><input type="submit" value="Обратиться" class="fit primary" /></div>
+							<div class="col-6 col-12-xsmall">
+								<input class="group-phone-or-email" type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" id="message" placeholder="Укажите Вашу просьбу" rows="6" required></textarea>
+							</div>
+							<div class="col-4 col-12-xsmall">
+								<input type="submit" value="Обратиться" class="fit primary" />
+							</div>
 						</div>
 					</form>
 				</div>
@@ -340,6 +346,10 @@
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+		<script src="assets/js/jquery-validation-1.19.2/dist/jquery.validate.min.js"></script>
+		<script src="assets/js/jquery-validation-1.19.2/dist/additional-methods.min.js"></script>
+		<script src="assets/js/jquery-validation-1.19.2/dist/localization/messages_ru.min.js"></script>
+		<script src="assets/js/jquery.form.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>

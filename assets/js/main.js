@@ -281,34 +281,13 @@
 				}
 			},
 			submitHandler: function(form) {
-				console.log('Show loader');
 				$(form).ajaxSubmit({
 					dataType: 'json',
-					success: function (data) {
-						console.log('success: %O', arguments);
-					},
-					error: function () {
-						console.log('error: %O', arguments);
+					success: function () {
+						$needHelpEmailForm.hide();
+						$needHelpEmailForm.closest('.container').find('.success-message').show();
 					}
 				});
-
-				// var $form = form;
-				// console.log('Show loader');
-				//
-				// $.ajax({
-				// 	method: form.method,
-				// 	url: form.action,
-				// 	data: $form.serialize(),
-				// 	dataType: 'json'
-				// }).done(function(data, textStatus, jqXHR) {
-				// 	console.log('data: %O', data);
-				// }).fail(function(jqXHR, textStatus, errorThrown) {
-				// 	console.log('Fail');
-				// }).always(function() {
-				// 	console.log('Hide loader');
-				// });
-				//
-				// return false;
 			}
 		});
 	}

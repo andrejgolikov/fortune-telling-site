@@ -4269,3 +4269,8 @@ form textarea {
     resize: vertical;
     min-height: 150px;
 }
+
+#five .success-message {
+    color: white;
+    display: none;
+}
